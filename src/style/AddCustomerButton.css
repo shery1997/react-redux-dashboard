@@ -1,0 +1,15 @@
+/* src/components/AddCustomerButton.css */
+#add-customer-btn {
+  margin-left: 50px;
+  background: linear-gradient(90deg, #57BC90, #004B40);  color: white;
+  padding: 12px 20px;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#add-customer-btn:hover {
+  background-color: #45a049;
+  color: #fff;
+}

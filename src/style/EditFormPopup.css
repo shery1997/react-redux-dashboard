@@ -1,0 +1,50 @@
+/* src/style/EditPopupForm.css */
+
+.edit-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 20px;
+  width: 528px;
+  height: 300px;
+}
+
+.edit-popup h2 {
+  text-align: center;
+}
+
+.edit-popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-popup label {
+  font-weight: bold;
+}
+
+.edit-popup .submit-btn {
+  background-color: #57BC90;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: auto;
+  background: none;
+  border: none;
+}

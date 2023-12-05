@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import AddCustomerButton from './components/AddCustomerButton';
+import CustomerTable from './components/CustomerTable';
+import './App.css'; // Import a global CSS file for the app layout
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app-container">
+      <div id="sidebar-container">
+        <Sidebar />
+      </div>
+      <div id="main-content">
+        <Header />
+        <AddCustomerButton />
+        <CustomerTable />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
